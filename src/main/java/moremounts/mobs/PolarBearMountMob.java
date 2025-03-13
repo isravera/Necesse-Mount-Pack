@@ -1,20 +1,25 @@
 package moremounts.mobs;
 
 import necesse.engine.gameLoop.tickManager.TickManager;
+import necesse.engine.modifiers.ModifierValue;
+import necesse.engine.registries.ItemRegistry;
 import necesse.entity.mobs.MobDrawable;
 import necesse.entity.mobs.PlayerMob;
+import necesse.entity.mobs.buffs.BuffModifiers;
 import necesse.entity.mobs.summon.summonFollowingMob.mountFollowingMob.MountFollowingMob;
 import necesse.gfx.camera.GameCamera;
 import necesse.gfx.drawOptions.DrawOptions;
 import necesse.gfx.drawOptions.texture.TextureDrawOptions;
 import necesse.gfx.drawables.OrderableDrawables;
 import necesse.gfx.gameTexture.GameTexture;
+import necesse.inventory.item.Item;
 import necesse.level.maps.CollisionFilter;
 import necesse.level.maps.Level;
 import necesse.level.maps.light.GameLight;
 
 import java.awt.*;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class PolarBearMountMob extends MountFollowingMob {
 
@@ -99,28 +104,19 @@ public class PolarBearMountMob extends MountFollowingMob {
         }
     }
 
-    boolean hasBeenBuffed = false;
     @Override
-    public void clientTick(){
-        super.clientTick();
+    public Stream<ModifierValue<?>> getDefaultRiderModifiers() {
+        PlayerMob following = (PlayerMob) getFollowingMob();
 
-        if(isMounted() && !hasBeenBuffed) {
-            PlayerMob player = (PlayerMob) getFollowingMob();
-            int maxHealth = player.getMaxHealth();
-            player.setMaxHealth(maxHealth + 50);
-            hasBeenBuffed = true;
+        if (following != null && following.isAttacking) {
+            return Stream.of(
+                    new ModifierValue<>(BuffModifiers.MAX_HEALTH_FLAT, 50)
+            );
         }
-    }
 
-    @Override
-    public void dismounted() {
-        if(isClient()) {
+        return Stream.of(
+                new ModifierValue<>(BuffModifiers.MAX_HEALTH_FLAT, 50)
+        );
 
-            if(hasBeenBuffed){
-                PlayerMob player = (PlayerMob) getFollowingMob();
-                player.setMaxHealth(player.getMaxHealth() - 50);
-                hasBeenBuffed = false;
-            }
-        }
     }
 }
