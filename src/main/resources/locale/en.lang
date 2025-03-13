@@ -1,19 +1,21 @@
-[tile]
-exampletile=Example Tile
-
-[object]
-exampleobject=Example Object
-
 [item]
-exampleitem=Example Item
-examplesword=Example Sword
-examplestaff=Example Staff
+batmount=Bat Mount
+spidermount=Spider Mount
+crocodilemount=Crocodile Mount
+polarbearmount=Polar Bear Mount
 
 [itemtooltip]
-examplestafftip=Shoots a homing, piercing projectile
+batmounttip=Summon a bat that you can ride and gives you night vision.
+batmounttip2=Press [input=trinketability] to toggle night vision.
+spidermounttip=Summon a mountable spider that also grants you +10 summons for your spider staff.
+crocodilemounttip=Summon a mountable crocodile that is faster in water than on land.
+polarbearmounttip=Summon a mountable polar bear that stomps on your enemies.
 
 [mob]
-examplemob=Example Mob
+batmount=Bat
+spidermount=Spider
+crocodilemount=Crocodile
+polarbearmount=Polar Bear
 
-[buff]
-examplebuff=Example Buff
+[ui]
+toggleNV=Toggle Night Vision
