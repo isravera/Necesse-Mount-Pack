@@ -9,7 +9,7 @@ batmounttip=Invoca un murciélago que puedes montar y otorga visión nocturna.
 batmounttip2=Presiona [input=trinketability] para activar/desactivar la visión nocturna.
 spidermounttip=Invoca una araña que puedes montar y agrega +10 invocaciones al bastón arácnido.
 crocodilemounttip=Invoca un cocodrilo que puedes montar y que es más rápido en el agua que en la tierra.
-polarbearmounttip=Invoca un oso polar que puedes montar y pisotea a tus enemigos.
+polarbearmounttip=Invoca un oso polar que puedes montar y otorga +50 salud máxima mientras estás montado.
 
 [mob]
 batmount=Murciélago
