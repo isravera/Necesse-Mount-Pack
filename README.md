@@ -1,7 +1,7 @@
 ## The Ultimate Mount Pack: Soar and Spin Your Way Through Necesse!
 ![preview.png](src/main/resources/preview.png)
 
-This mod adds three powerful and exciting mounts to Necesse, allowing you to explore the world in new and exciting ways:
+This mod adds a collection of powerful and exciting mounts to Necesse, allowing you to explore the world in new and exciting ways:
 
 **Bat Mount:**
 * Gain night vision during the nighttime for enhanced visibility.
@@ -23,7 +23,7 @@ This mod adds three powerful and exciting mounts to Necesse, allowing you to exp
 * Defeat the Swamp Guardian for a chance to get the Crocodile Mount.
 * Defeat the Cryo Queen for a chance to get the Polar Bear Mount.
 
-After defeating these bosses once, your friendly **traveling merchant** will have these mounts for sale.
+After defeating these bosses once, your friendly **exotic merchant** will have these mounts for sale.
 
 ***This mod is a remake of the original ["Mount Pack"](https://github.com/creativemindpie/mountpack) mod, which has been fixed, updated and improved for compatibility with the latest version of Necesse.***
 

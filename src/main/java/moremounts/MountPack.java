@@ -12,14 +12,12 @@ import necesse.engine.modLoader.annotations.ModEntry;
 import necesse.engine.registries.ItemRegistry;
 import necesse.engine.registries.MobRegistry;
 import necesse.engine.sound.gameSound.GameSound;
-import necesse.entity.mobs.hostile.ZombieMob;
 import necesse.entity.mobs.hostile.bosses.CryoQueenMob;
 import necesse.entity.mobs.hostile.bosses.EvilsProtectorMob;
 import necesse.entity.mobs.hostile.bosses.QueenSpiderMob;
 import necesse.entity.mobs.hostile.bosses.SwampGuardianHead;
 import necesse.gfx.gameTexture.GameTexture;
 import necesse.inventory.lootTable.lootItem.ChanceLootItem;
-import necesse.level.maps.biomes.Biome;
 
 @ModEntry
 public class MountPack {
@@ -84,6 +82,6 @@ public class MountPack {
         PolarBearMountMob.textureShadow = GameTexture.fromFile("mobs/polarbearmount_shadow");
     }
 
-    public void postInit() { }
+    public void postInit() {}
 
 }
