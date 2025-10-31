@@ -62,7 +62,6 @@ public class PolarBearMountMob extends MountFollowingMob {
         });
     }
 
-    @Override
     public TextureDrawOptions getShadowDrawOptions(int x, int y, GameLight light, GameCamera camera) {
         int drawX = camera.getDrawX(x) - 64;
         int drawY = camera.getDrawY(y) - 128 + 36;

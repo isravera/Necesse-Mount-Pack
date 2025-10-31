@@ -7,8 +7,8 @@ plugins {
 
 project.ext.modID = "koltuz.moremounts" // The unique id of your mod. Must be all lowercase and cannot use special characters.
 project.ext.modName = "More Mounts" // The display name of your mod.
-project.ext.modVersion = "1.06" // Your current builds version. Must follow the xx.xx... format.
-project.ext.gameVersion = "0.32.0" // The target game version.
+project.ext.modVersion = "1.07" // Your current builds version. Must follow the xx.xx... format.
+project.ext.gameVersion = "1.0.2" // The target game version.
 project.ext.modDescription = "This mod adds a collection of new mounts" // Short description of what your mod is.
 project.ext.author = "Koltuz" // Your name
 

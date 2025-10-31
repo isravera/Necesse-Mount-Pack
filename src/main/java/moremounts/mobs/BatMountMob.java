@@ -148,7 +148,7 @@ public class BatMountMob extends MountFollowingMob implements MountAbility {
             }
         });
 
-        addShadowDrawables(topList, x, y, light, camera);
+        addShadowDrawables(topList, level, x, y, light, camera);
     }
 
     @Override
@@ -156,7 +156,6 @@ public class BatMountMob extends MountFollowingMob implements MountAbility {
         return new Point((int)(getWorldEntity().getTime() / getRockSpeed()) % 4, dir % 4);
     }
 
-    @Override
     public TextureDrawOptions getShadowDrawOptions(int x, int y, GameLight light, GameCamera camera) {
         GameTexture shadowTexture = textureShadow;
         int drawX = camera.getDrawX(x) - 32;
