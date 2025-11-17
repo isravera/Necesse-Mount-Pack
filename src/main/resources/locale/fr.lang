@@ -1,0 +1,31 @@
+# Traduction réalisée par Caranud (https://steamcommunity.com/id/Caranud/)
+# Version de mod : 1.07 [31/10/25]
+# Version de jeu : 1.0.2 [27/10/25]
+# Date de la dernière traduction : 16/11/2025
+# Note de Caranud : n’hésitez pas à reprendre cette traduction si je ne suis plus actif et disponible depuis un moment ! :) Je suis également sur le serveur Discord (https://discord.com/invite/HSvuUuA).
+
+[item]
+batmount=Monture (chauve-souris géante)
+spidermount=Monture (araignée géante)
+crocodilemount=Monture (crocodile)
+polarbearmount=Monture (ours polaire)
+
+[itemtooltip]
+batmounttip=Invoque une chauve-souris géante apprivoisée que vous pouvez chevaucher et qui vous octroie la vision nocturne.
+batmounttip2=Appuyez sur [input=trinketability] pour activer la vision nocturne.
+// Trouvable après avoir vaincu le Protecteur du mal.
+spidermounttip=Invoque une araignée géante apprivoisée que vous pouvez chevaucher et qui vous octroie +10 invocations pour votre bâton arachnéen.
+// Trouvable après avoir vaincu la Reine des araignées.
+crocodilemounttip=Invoque un crocodile apprivoisé que vous pouvez chevaucher et qui est plus rapide en mer que sur terre.
+// Trouvable après avoir vaincu le Gardien des marais.
+polarbearmounttip=Invoque un ours polaire apprivoisé que vous pouvez chevaucher et qui vous octroie +50 de santé maximum.
+// Trouvable après avoir vaincu la Reine cryo.
+
+[mob]
+batmount=Chauve-souris
+spidermount=Araignée
+crocodilemount=Crocodile
+polarbearmount=Ours polaire
+
+[ui]
+toggleNV=Activer la vision nocturne
